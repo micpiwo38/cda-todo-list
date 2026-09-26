@@ -1,0 +1,7 @@
+services:
+  web:
+    build: . #Utilise le fichier Dokerfile
+    container_name: serveur_nginx
+    ports:
+      - "8080:80" #Ici, le port 8080 de votre machine locale pointera vers le port 80 du conteneur Nginx.
+    restart: always
